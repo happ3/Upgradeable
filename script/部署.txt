@@ -1,0 +1,16 @@
+
+forge script script/DeployV1.s.sol:DeployV1 --rpc-url https://sepolia.gateway.tenderly.co --broadcast
+
+
+
+forge script script/DeployV1.s.sol:DeployV1 --rpc-url http://127.0.0.1:8545 --broadcast
+
+forge script script/UpgradeV2.s.sol:UpgradeV2 --rpc-url http://127.0.0.1:8545 --broadcast
+
+
+
+
+forge script script/DeployEXV1.s.sol:DeployEXV1 --rpc-url http://127.0.0.1:8545 --broadcast
+
+
+forge script script/UpgradeEXV2.s.sol:UpgradeEXV2 --rpc-url http://127.0.0.1:8545 --broadcast
