@@ -9,7 +9,7 @@ contract UpgradeEXV2 is Script {
     address constant PROXY = 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512;
 
     function run() external {
-        uint deployPk = vm.envUint("DEPLOY_PRIVATE_KEY");
+        uint deployPk = vm.envUint("PRIVATE_KEY");
         // 第一步：部署V2实现合约（任何人可部署）
         vm.startBroadcast(deployPk);
         LogicEXV2 implV2 = new LogicEXV2();
